@@ -4,7 +4,7 @@ Simulate and synthesize the two designs of a 16-bit adder-based multipliers. Exa
 
 ## combinational design
 
-(referring to the on P241-259)
+(referring to the on P185-191)
 
 
 
