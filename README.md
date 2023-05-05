@@ -20,6 +20,33 @@ $$
 
 3. Add the shifted $b_i * A$ terms to obtain the final product.
 
+### simulation
+
+Some unexpected results are obtained when conducting timing simulation. Possible reason is that the level width of the signal is shorter than the gate delay of this cell.
+
+![1](https://user-images.githubusercontent.com/117464811/236365793-8767d36f-f98e-4ed8-a491-deef47ffac34.png "behavioral")
+
+![2](https://user-images.githubusercontent.com/117464811/236366777-22ecd268-96eb-4fdc-bf38-282cc0e51a98.png "post-synthesis")
+
+![3](https://user-images.githubusercontent.com/117464811/236366925-f5cf4eb3-553c-4a91-822b-95812919f97a.png "post-synthesis")
+
+
+post-implementation
+
+### RTL schematic
+
+![image](https://user-images.githubusercontent.com/117464811/236366121-82f5d841-7a67-4b9e-810c-ff542ef31c44.png)
+
+
+
+
+
+
+
+
+
+
+
 ## repetitive-addition design
 
 (referring to the on P241-259)
