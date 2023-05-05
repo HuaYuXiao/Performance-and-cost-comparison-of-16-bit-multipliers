@@ -2,7 +2,7 @@
 
 Simulate and synthesize the two designs of a 16-bit adder-based multipliers. Examine the synthesized RTL schematics, and compare the performance of the different designs in terms of the device utilization, delay, etc.
 
-## combinational design
+## Combinational design
 
 (referring to the on P185-191)
 
@@ -20,7 +20,7 @@ $$
 
 3. Add the shifted $b_i * A$ terms to obtain the final product.
 
-### simulation
+### Simulation
 
 Some unexpected results are obtained when conducting timing simulation. Possible reason is that the level width of the signal is shorter than the gate delay of this cell.
 
@@ -30,8 +30,9 @@ Some unexpected results are obtained when conducting timing simulation. Possible
 
 ![3](https://user-images.githubusercontent.com/117464811/236366925-f5cf4eb3-553c-4a91-822b-95812919f97a.png "post-synthesis")
 
+![4](https://user-images.githubusercontent.com/117464811/236368664-483d4802-834d-495d-9371-0ff7f619ed0f.png "post-implementation")
 
-post-implementation
+![5](https://user-images.githubusercontent.com/117464811/236368626-e584f336-e840-443b-92d2-e13f5a626791.png "post-implementation")
 
 ### RTL schematic
 
@@ -45,15 +46,78 @@ post-implementation
 
 
 
-
-
-## repetitive-addition design
+## Repetitive-addition design
 
 (referring to the on P241-259)
 
+### Pseudo-code
+
+```
+if (a_in =0 or b_in =0) then{
+  r = 0;
+}
+else{
+  a = a_in; n = b_in; r = 0;
+  r = r + a;
+  n = n - 1;
+  if (n = 0) then {
+    goto stop;
+  }
+  else {
+    goto op;
+  }
+}
+r_out = r;
+```
+
+### ASM chart
+
+The circuit require 3 registers, to store signals $r$, $n$, and $a$ respectively.
+
+![image](https://user-images.githubusercontent.com/117464811/236367900-bea21ebe-c308-43e1-86a7-d41a1e083367.png)
+
+The RT operations:
+
+1. RT operation with the r register:
+
+• r <− r ( in the idle state)
+
+• r <− 0 (in the load and ab0 state)
+
+• r <− r + a ( in the op state)
+
+2. RT operation with the n register:
+
+• n <− n ( in the idle state)
+
+• n <− b_in (in the load and ab0 state)
+
+• n <− n − 1 ( in the op state)
+
+3. RT operation with the a register:
+
+• a <− a ( in the idle and op state)
+
+• a <− a_in (in the load and ab0 state)
+
+### Conceptual diagram
+
+![image](https://user-images.githubusercontent.com/117464811/236368275-7691fa1f-48f7-4a94-9d00-6ac48b38b3ac.png)
+
+### Block diagram
+
+![image](https://user-images.githubusercontent.com/117464811/236368316-c0fb45eb-8729-4c5f-ab11-83c8301da148.png)
 
 
-## pipelined design
+
+
+
+
+
+
+
+
+## Pipelined design
 
 (referring to the one on P317-330).
 
