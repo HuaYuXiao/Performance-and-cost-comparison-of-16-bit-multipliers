@@ -22,7 +22,7 @@ $$
 
 ### Simulation
 
-Some unexpected results are obtained when conducting timing simulation. Possible reason is that the level width of the signal is shorter than the gate delay of this cell.
+Some unexpected results are obtained when conducting timing simulation. Possible reason is that the level width of the signal is shorter than the gate delay of this cell. This problem can be fixed if we prolong the time for simulation.
 
 ![1](https://user-images.githubusercontent.com/117464811/236365793-8767d36f-f98e-4ed8-a491-deef47ffac34.png "behavioral")
 
