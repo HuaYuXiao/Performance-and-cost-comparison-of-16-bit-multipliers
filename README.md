@@ -164,7 +164,7 @@ More efficient Pipelined multiplier
 
 ### Power
 
-Similar to that of repetitive-adder design, pipelined design is much more efficient than the origin one.
+Similar to that of repetitive-adder design, pipelined design is much more efficient than the origin one, even better than the last one.
 
 ![image](https://user-images.githubusercontent.com/117464811/236638300-a2ec4c2c-fc56-4664-b2c8-d0c59e6e517d.png)
 
