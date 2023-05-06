@@ -42,10 +42,6 @@ Some unexpected results are obtained when conducting timing simulation. Possible
 
 
 
-
-
-
-
 ## Repetitive-addition design
 
 (referring to the on P241-259)
@@ -110,9 +106,21 @@ The RT operations:
 
 ### Simulation
 
+It can be seen from the chart that in timing simulation, the output is not as expected for the beginning 100 ns. This is because the software defines the first 100 ns to be setup time period. If we prolong the simulation time, or postpone the time to start the first computation, the problem will be solved.
+
+![1](https://user-images.githubusercontent.com/117464811/236631904-66d0eca8-c076-428a-92b7-253a0cbc2bea.png "behavioral")
+
+![2](https://user-images.githubusercontent.com/117464811/236631909-552748ea-7be8-40c7-814c-1d2e67959cac.png "post-synthesis")
+
+![3](https://user-images.githubusercontent.com/117464811/236632169-d9b1e8b6-e5c3-4b0d-a522-1e17c968a6bd.png "post-synthesis")
+
+![4](https://user-images.githubusercontent.com/117464811/236632172-6d2b7d5e-3abc-4fb4-bb1f-0fc445996ca0.png "post-implementation")
+
+![5](https://user-images.githubusercontent.com/117464811/236632174-a8cfb619-acc1-48a3-96c5-d61edc4e4686.png "post-implementation")
 
 ### RTL schematic
 
+![image](https://user-images.githubusercontent.com/117464811/236631879-844cf52f-8561-481a-9160-e84f56ae87fd.png)
 
 
 
