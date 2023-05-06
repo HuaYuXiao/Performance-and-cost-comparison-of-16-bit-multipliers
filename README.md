@@ -108,10 +108,10 @@ The RT operations:
 
 ![image](https://user-images.githubusercontent.com/117464811/236368316-c0fb45eb-8729-4c5f-ab11-83c8301da148.png)
 
+### Simulation
 
 
-
-
+### RTL schematic
 
 
 
