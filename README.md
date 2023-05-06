@@ -148,14 +148,25 @@ More efficient Pipelined multiplier
 
 ### Simulation
 
+![1](https://user-images.githubusercontent.com/117464811/236638405-425758e9-980e-48b2-a3ec-2fcd752c284d.png "behavioral")
 
+![2](https://user-images.githubusercontent.com/117464811/236638452-daf4e99e-5ca3-4e48-b871-4b354f81b660.png "post-synthesis")
+
+![3](https://user-images.githubusercontent.com/117464811/236638585-df9221d3-2ad5-44b5-b22a-0a4d6f32757d.png "post-synthesis")
+
+![4](https://user-images.githubusercontent.com/117464811/236638622-2e0f36b1-056e-428d-8d81-69e42d98bde9.png "post-implementation")
+
+![5](https://user-images.githubusercontent.com/117464811/236638667-b50cd725-2d76-410e-b11f-5dc6e981ff9f.png "post-implementation")
 
 ### Schematic
 
-
+![image](https://user-images.githubusercontent.com/117464811/236638362-dfecfcb3-4ff8-48e3-b1f4-ce7dad21c03c.png)
 
 ### Power
 
+Similar to that of repetitive-adder design, pipelined design is much more efficient than the origin one.
+
+![image](https://user-images.githubusercontent.com/117464811/236638300-a2ec4c2c-fc56-4664-b2c8-d0c59e6e517d.png)
 
 ## Conclusion
 
