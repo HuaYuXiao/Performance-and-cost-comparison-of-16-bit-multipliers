@@ -134,8 +134,18 @@ Energy comsumption is much lower than conbinational design(38W->7W).
 
 Develop an n-bit pipeline design of multiplier where n may be an integer from 1 to 32. Perform the post-layout simulation of the design, and find out the delay, throughput, device utilization, etc., and compare them with that of designs in (1).
 
+![image](https://user-images.githubusercontent.com/117464811/236635261-def2ee91-ed05-4ada-b1f5-7a48189b30f8.png)
 
 
+
+
+More efficient Pipelined multiplier
+
+• Use a smaller (n+1)-bit adder to replace the 2n-bit adder in an n-bit multiplier
+
+• Reduce the size of the partial-product register
+
+• Reduce the size of the registers that hold the b signal
 
 ## Conclusion
 
