@@ -38,9 +38,9 @@ Some unexpected results are obtained when conducting timing simulation. Possible
 
 ![image](https://user-images.githubusercontent.com/117464811/236366121-82f5d841-7a67-4b9e-810c-ff542ef31c44.png)
 
+### Power
 
-
-
+![image](https://user-images.githubusercontent.com/117464811/236634327-15bb3656-5f3a-4c51-b915-b1526b958480.png)
 
 ## Repetitive-addition design
 
@@ -122,11 +122,25 @@ It can be seen from the chart that in timing simulation, the output is not as ex
 
 ![image](https://user-images.githubusercontent.com/117464811/236631879-844cf52f-8561-481a-9160-e84f56ae87fd.png)
 
+### Power
 
+Energy comsumption is much lower than conbinational design(38W->7W).
 
+![image](https://user-images.githubusercontent.com/117464811/236634350-c8f97fe6-7888-4cdb-b991-8cfb61d699a0.png)
 
 ## Pipelined design
 
 (referring to the one on P317-330).
 
 Develop an n-bit pipeline design of multiplier where n may be an integer from 1 to 32. Perform the post-layout simulation of the design, and find out the delay, throughput, device utilization, etc., and compare them with that of designs in (1).
+
+
+
+
+## Conclusion
+
+In this project, Idesign three methods to calculate the product of two 16-bit binary numbers: conbinational design, repetitive-adder design, and pipelined design. The performance of these three calculation methods improves progressively.
+
+In conbinational design, the output is determined by the current inputs, independent of previous inputs. In repetitive adder design, the same addition operation is performed multiple times until the desired result is achieved. In pipelined design, multiple operations are performed simultaneously by dividing the input data into smaller pieces and processing them in parallel.
+
+We should always take action to improve the efficiency of the digital system. Possible methods are repetitive-adder or pipelined design.
