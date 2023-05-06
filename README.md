@@ -132,12 +132,7 @@ Energy comsumption is much lower than conbinational design(38W->7W).
 
 (referring to the one on P317-330).
 
-Develop an n-bit pipeline design of multiplier where n may be an integer from 1 to 32. Perform the post-layout simulation of the design, and find out the delay, throughput, device utilization, etc., and compare them with that of designs in (1).
-
-![image](https://user-images.githubusercontent.com/117464811/236635261-def2ee91-ed05-4ada-b1f5-7a48189b30f8.png)
-
-
-
+Develop an n-bit pipeline design of multiplier where n may be an integer from 1 to 32. Perform the post-layout simulation of the design, and find out the delay, throughput, device utilization, etc., and compare them with that of designs.
 
 More efficient Pipelined multiplier
 
@@ -146,6 +141,21 @@ More efficient Pipelined multiplier
 • Reduce the size of the partial-product register
 
 • Reduce the size of the registers that hold the b signal
+
+### Block diagram
+
+![image](https://user-images.githubusercontent.com/117464811/236635261-def2ee91-ed05-4ada-b1f5-7a48189b30f8.png)
+
+### Simulation
+
+
+
+### Schematic
+
+
+
+### Power
+
 
 ## Conclusion
 
